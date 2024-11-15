@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Income Breakdown</title>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+  <!-- my content -->
+  <div class=" shadow-lg rounded-lg w-full max-w-sm " id="main_container">
+    <div class="w-full bg-blue-400 h-14 rounded-t-lg ">
+      <div class="flex px-4 h-full w-full mt-auto justify-between items-center ">
+        <p class="text-sm font-medium">Your withdrawal process in </p>
+        <div class="p-1 w-12 rounded-lg text-center bg-red-50">1:1</div>
+      </div>
+    </div>
+    <div class="bg-white rounded-b-lg  p-4  w-full ">
+      <div class="text-center mb-2">
+        <h2 class="text-lg font-bold">Requested Amount</h2>
+        <p class="text-xl font-bold text-blue-600">$20,17.00</p>
+      </div>
+      <div class="relative w-40 h-40 mx-auto rounded-full">
+        <!-- Progress Circle -->
+        <div class="absolute inset-0 rounded-full" style="background: conic-gradient(#2563eb 0% 75%, gray 75% 100%);">
+        </div>
+        <!-- Center Circle -->
+        <div class="absolute inset-4 bg-white rounded-full"></div>
+        <!-- Center Text -->
+        <div class="absolute inset-0 flex items-center justify-center text-xl font-semibold text-gray-700">
+          $1000.000
+        </div>
+      </div>
+      <h3 class="mt-4 font-medium">Pending Withdrawals</h3>
+      <div class="space-y-3 mt-2 overflow-y-auto max-h-56">
+
+        <div class="flex items-center  rounded-md ">
+          <div class="w-8 h-8 bg-blue-500 rounded-full flex justify-center items-center mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-green-500 text-sm font-medium">Rs.20.00</p>
+            <p class="text-gray-600 text-xs">UTR No: 977205335384</p>
+            <p class="text-gray-600 text-xs">15-11-2024 4:33:37 pm</p>
+          </div>
+          <button class="ml-auto bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium py-2 px-4 rounded-lg">I
+            Confirm</button>
+        </div>
+        <div class="flex items-center  rounded-md ">
+          <div class="w-8 h-8 bg-blue-500 rounded-full flex justify-center items-center mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-green-500 text-sm font-medium">Rs.20.00</p>
+            <p class="text-gray-600 text-xs">UTR No: 977205335384</p>
+            <p class="text-gray-600 text-xs">15-11-2024 4:33:37 pm</p>
+          </div>
+          <button class="ml-auto bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium py-2 px-4 rounded-lg">I
+            Confirm</button>
+        </div>
+        <div class="flex items-center  rounded-md ">
+          <div class="w-8 h-8 bg-blue-500 rounded-full flex justify-center items-center mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-green-500 text-sm font-medium">Rs.20.00</p>
+            <p class="text-gray-600 text-xs">UTR No: 977205335384</p>
+            <p class="text-gray-600 text-xs">15-11-2024 4:33:37 pm</p>
+          </div>
+          <button class="ml-auto bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium py-2 px-4 rounded-lg">I
+            Confirm</button>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const element = document.getElementById('main_container');
+    element.classList.add('animate-pulse');
+    setTimeout(() => {
+      element.classList.remove('animate-pulse');
+    }, 2000); // Match the animation duration
+  });
+</script>
+
+</html>

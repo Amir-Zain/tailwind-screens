@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Income Breakdown</title>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+	<!-- my content -->
+	<div class=" shadow-lg rounded-lg w-full max-w-sm " id="main_container">
+		<div class="w-full bg-blue-400 h-24 rounded-t-lg  flex items-center justify-center">
+			<h2 class="text-2xl font-bold">Transfer your fund</h2>
+		</div>
+		<div class=" rounded-b-lg  p-4  w-full flex flex-col space-y-3 h-40 bg-white ">
+			<div>
+				<label for="upi_id" class="block mb-2 text-sm font-medium text-gray-900 ">UPI ID</label>
+				<input type="text"
+					class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+					placeholder="eg: 1221@oksbi" required />
+			</div>
+			<div class="flex items-center justify-center h-full">
+				<button
+					class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4  focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 w-min"
+					type="button">Continue</button>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+		const element = document.getElementById('main_container');
+		element.classList.add('animate-pulse');
+		setTimeout(() => {
+			element.classList.remove('animate-pulse');
+		}, 2000); // Match the animation duration
+	});
+</script>
+
+</html>
